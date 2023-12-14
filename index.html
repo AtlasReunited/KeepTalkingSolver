@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bomb Solver</title>
+</head>
+<body>
+<div class="main-screen" id="mainScreen">
+  <div class="module" id="generalInfoModule">
+    <h2>Bomb General Elements</h2>
+    <p class="output" id="generalInfoOutput">Important todo: input serial number and batteries. Many modules require these.</p>
+    <button class="module-button" onclick="openModule('generalInfoModuleForm')">Open Module</button>
+    <div class="module-form" id="generalInfoModuleForm">
+      <label for="serialNumber">Serial Number:</label>
+      <input type="text" id="serialNumber" placeholder="Enter serial number">
+      <button onclick="submitGeneralInfo()">Submit</button>
+    </div>
+  </div>
+
+  <div class="module" id="simpleWiresModule">
+    <h2>Simple Wires</h2>
+    <p class="output" id="simpleWiresOutput"></p>
+    <button class="module-button" onclick="openModule('simpleWiresModuleForm')">Open Module</button>
+    <div class="module-form" id="simpleWiresModuleForm">
+      <label for="wireColor">Wire Color:</label>
+      <input type="text" id="wireColor" placeholder="Enter wire color">
+      <button onclick="submitSimpleWires()">Submit</button>
+    </div>
+  </div>
+
+  <!-- Add more modules as needed -->
+</div>
+<script src="modules/simple_wires.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
