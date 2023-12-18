@@ -1,4 +1,4 @@
-function decodeSimpleWires(colors) {
+function decodeSimpleWires(colors){
     let count = 0;
     let lastColor = '';
     //Parse the string and ensure it is clean; no numbers or non-space characters
@@ -39,7 +39,7 @@ function threeWires(colors){
     // Otherwise, cut the last wire.
     if(colors.includes('red') === false) {
         return 'Cut the second wire.';
-    } else if (colorArray[-1].contains('white') ) {
+    } else if (colorArray[-1] === ('white') ) {
         return 'Cut the last wire.';
     }else if(colors.includes('blue') > 1){
         return 'Cut the last blue wire.';
@@ -87,7 +87,7 @@ function fiveWires(colors){
             'Please enter the serial number in the General Info module.';
     }
     //Ensure the serial number ends with a number, as it may end with a letter
-    if(colorArray[-1].contains('black') && isLastDigitOdd()){
+    if(colorArray[-1] === "black" && isLastDigitOdd()){
         return 'Cut the fourth wire.';
     } else if (colors.includes('red') === 1 && colors.includes('yellow') > 1) {
         return 'Cut the first wire.';

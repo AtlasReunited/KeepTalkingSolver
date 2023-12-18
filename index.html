@@ -30,9 +30,20 @@
     </div>
   </div>
 
+  <div class="module" id="memoryModule">
+    <h2>Memory Module</h2>
+    <p class="output" id="memoryOutput"></p>
+    <button class="module-button" onclick="openModule('memoryModuleForm')">Open Module</button>
+    <div class="module-form" id="memoryModuleForm">
+      <label for="memory_output">Input digits here:</label>
+      <input type="text" id="memory_output" placeholder="Enter: display + nums 1-4 (ie, 3 1234)">
+      <button onclick="memoryOutput()">Submit</button>
+    </div>
+  </div>
   <!-- Add more modules as needed -->
 </div>
 <script src="modules/simple_wires.js"></script>
+<script src="modules/memory.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
